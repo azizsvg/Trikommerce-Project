@@ -7,7 +7,7 @@ def daily_sales(available_items, inventory_records, current_day):
         sold_unit = random.randint(0, 200)
         #basically works as available_item = available_item - sold_unit
         available_items -= sold_unit
-        
-        inventory_records((current_day, sold_unit, 0, available_items))
+
+        inventory_records.append((current_day, sold_unit, 0, available_items))
 
     return available_items
